@@ -1,0 +1,794 @@
+/* monserrat */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap');
+/* ubuntu */
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    font-family: montserrat,sans-serif;
+    /* 1f1b0c  background-color: rgba(113, 105, 50, 0.4); */
+    background-color: #1f1b0c;  
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.fullbody{
+    margin: 0px 16px;
+    width:98%;
+    background-color: #1f1b0c;
+}
+
+.container{
+    height: 96vh;
+    width: 100%;
+    background-image: url(HD-wallpaper-porsche-porsche-911-gt3-car-porsche-911-sport-car-black-car.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 0px 0px 40px 40px;
+    box-shadow: 4px 4px 50px black;
+}
+
+.navbar{
+    height: 60px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar>h1{
+    color: #ffaf00;
+    font-size: 1.75rem;
+    margin-left:24px ;
+    letter-spacing: 2px;
+    text-shadow: 4px 4px 10px black;
+    display: flex;
+    align-items: center;
+}
+
+.navbar>h1>i{
+    font-size: 40px;
+    margin-right: 12px;
+    padding: 4px 4px 5px 6px;
+    background-color: #121212;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+}
+
+.navbar ul{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar ul li{
+    margin-right: 2rem;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 18px;
+    color:#121212;
+}
+
+.navbar ul li a:hover{
+    color: #ffaf00;
+    transition-duration: 0.7s;
+}
+
+.navbar .nav-acc{
+    font-size: 20px;
+    font-weight: 600;
+    margin-right: 24px;
+    display: flex;
+    align-items: center;
+    color: #121212;
+}
+
+.navbar .nav-acc i{
+    font-size: 24px;
+    background-color: orange;
+    padding: 8px;
+    border-radius: 100%;
+    margin-right: 8px;
+}
+
+.content{
+    height: 120px;
+    width: 540px;
+    position: relative;
+    top: 60px;
+    left: 100px;
+    font-family: ubuntu;
+    padding:10px ;
+}
+
+.content .subpara{
+    font-size: 24px;
+    font-weight: 400;
+    color: black;
+}
+
+.content .mainpara{
+    font-size: 32px;
+    color: black;
+    font-weight:400 ;
+    margin-top: 4px;
+}
+
+.content .footpara{
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+.content .mainpara>span{
+    color: black ;
+    font-weight: 600;
+    text-shadow: 2px 2px 30px black;
+}
+
+.content .line{
+    height: 3px;
+    width: 200px;
+    background-color: black;
+    margin-top: 12px;
+}
+
+.content .ctn-btn > button{
+    font-family: ubuntu;
+    border: none;
+    margin: 20px 30px 0px 0px;
+    border: 1px solid black;
+    padding: 8px;
+    background-color: #ffaf00;
+    font-weight: 600;
+    font-size: 14px;
+    border-radius: 8px;
+}
+
+.content .ctn-btn > button:nth-child(1){
+    margin-left:0px ;
+}
+
+.content .ctn-btn>button a{
+    color: #121212;
+    text-decoration: none;
+}
+
+.content .avl-on{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 54px;
+    width: 416px;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 8px;
+    margin-top:16px;
+    box-shadow: 10px 10px 30px black;
+}
+
+.content .avl-on>a img{
+    height: 36px;
+    margin-top: 4px;
+    border: 2px solid black ;
+    border-radius: 4px;
+}
+
+.rental{
+    position: relative;
+    float: right;
+    top: -80px;
+    right: 60px;
+    background-color: rgba(255, 255, 255, 0.4);
+    width: 560px;
+    height: 520px;
+    border-radius: 40px 40px 40px 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 4px 4px 40px black;
+}
+
+.rental>p{
+    font-family: ubuntu;
+    font-size: 28px;
+    font-weight: 600;
+    margin-top: 16px;
+} 
+
+.rental .cartype{
+    display: flex;
+    width: 500px;
+    background-color: rgba(255, 235, 205, 0.9);
+    padding: 4px;
+    border-radius: 12px;
+    margin-top: 16px;
+    height: 36px;
+    align-items: center;
+}
+
+.rental .cartype>p{
+    font-size: 18px;
+    font-weight: 600;
+    font-family: montserrat;
+    margin-left: 30px;
+}
+
+.rental .cartype>select{
+    height: 30px;
+    border-radius: 6px;
+    padding: 4px 4px 4px 15px;
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    width: 260px;
+    font-family: montserrat;
+    font-weight: 600;
+    color: #121212;
+    margin-left: 95px;
+}
+
+.rental .pickup{
+    display: flex;
+    width: 500px;
+    background-color: rgba(255, 235, 205, 0.9);
+    padding: 4px;
+    border-radius: 12px;
+    margin-top: 16px;
+    height: 36px;
+    align-items: center;
+}
+
+.rental .pickup>p{
+    font-size: 18px;
+    font-weight: 600;
+    font-family: montserrat;
+    margin-left: 30px;
+}
+
+.rental .pickup>input{
+    height: 20px;
+    border-radius: 6px;
+    padding: 4px 4px 4px 15px;
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    width: 240px;
+    font-family: montserrat;
+    font-weight: 600;
+    color: #121212;
+    margin-left: 60px;
+}
+
+.rental .return{
+    display:flex;
+    width: 500px;
+    background-color: rgba(255, 235, 205, 0.9);
+    padding: 4px;
+    align-items: center;
+    border-radius: 12px;
+    margin-top: 16px;
+    height: 36px;
+}
+
+.rental .return>p{
+    font-size: 18px;
+    font-weight: 600;
+    font-family: montserrat;
+    margin-left: 30px;
+}
+
+.rental .return>input{
+    height: 20px;
+    border-radius: 6px;
+    padding: 4px 4px 4px 15px;
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    width: 240px;
+    margin-right: 4px;
+    font-family: montserrat;
+    font-weight: 600;
+    color: #121212;
+    margin-left: 60px;
+}
+
+
+.rental .location{
+    display: flex;
+    width: 500px;
+    background-color: rgba(255, 235, 205, 0.9);
+    padding: 4px;
+    border-radius: 12px;
+    margin-top: 16px;
+    align-items: center;
+    height: 36px;
+}
+
+.rental .location>p{
+    font-size: 18px;
+    font-weight: 600;
+    font-family: montserrat;
+    margin-left: 30px;
+}
+
+.rental .location>.lcn-input{
+    margin-right: -14px;
+}
+
+.rental .location>.lcn-input>input{
+    height: 28px;
+    border-radius: 6px;
+    padding: 4px 4px 4px 15px;
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    width: 260px;
+    font-family: montserrat;
+    font-weight: 600;
+    margin-left: 90px;
+}
+
+.rental .location>.lcn-input>input::placeholder{
+    color: #121212;
+}
+
+.rental .location>.lcn-input>i{
+    position: relative;
+    font-size: 20px;
+    top: 4px;
+    left:-24px;
+}
+
+.rental .number{
+    display: flex;
+    width: 500px;
+    background-color: rgba(255, 235, 205, 0.9);
+    padding: 4px;
+    align-items: center;
+    height: 36px;
+    border-radius: 12px;
+    margin-top: 16px;
+}
+
+.rental .number>input{
+    height: 20px;
+    border-radius: 6px;
+    padding: 4px 4px 4px 15px;
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    width: 240px;
+    font-family: montserrat;
+    font-weight: 600;
+    margin-left: 110px;
+}
+
+.rental .number>input::placeholder{
+    color: #121212;
+}
+
+.rental .number>p{
+    font-size: 18px;
+    font-weight: 600;
+    font-family: montserrat;
+    margin-left: 30px;
+}
+
+.rental .email{
+    display: flex;
+    width: 500px;
+    background-color: rgba(255, 235, 205, 0.9);
+    padding: 4px;
+    align-items: center;
+    height: 36px;
+    border-radius: 12px;
+    margin-top: 16px;
+}
+
+.rental .email>p{
+    font-size: 18px;
+    font-weight: 600;
+    margin-left: 30px;
+}
+
+.rental .email>input{
+    height: 20px;
+    border-radius: 6px;
+    padding: 4px 4px 4px 15px;
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    width: 240px;
+    font-family: montserrat;
+    font-weight: 600;
+    margin-left: 120px;
+}
+
+.rental .email>input::placeholder{
+    color: #121212;
+}
+
+.rental .pay{
+    height: 32px;
+    width: 300px;
+    margin-top: 16px;
+    border-radius: 8px;
+    border: 2px solid black;
+    background-color: rgba(0, 0, 164, 0.8);
+    font-size: 18px;
+    font-family: ubuntu;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.rental .pay>a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.rental .payment-option{
+    height: 50px;
+    width: 360px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 16px;
+    border-radius: 8px;
+    padding: 4px;
+}
+.rental .payment-option>img{
+    height: 40px;
+    width: 80px;
+    border-radius: 8px;
+    border: 2px solid black;
+    
+}
+
+.fullbody-line{
+    height: 4px;
+    width: 80%;
+    background-color: #ffaf00;
+    position: relative;
+    left: 10%;
+    margin-top: 30px;
+}
+
+.about{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    height: 140px;
+    background-color: rgba(113, 105, 50, 0.4);
+    position: absolute;
+    left: 10%;
+    padding: 10px;
+    margin-top: 30px;
+    border-radius: 20px;
+    box-shadow: 10px 10px 20px #121212;
+}
+
+.about .abt-main{
+    font-family: montserrat;
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin: 10px;
+    color: #fff;
+}
+
+.about .abt-sub{
+    font-size: 18px;
+    font-weight: 500;
+    color: #fff;
+    margin: 0px 10px;
+    letter-spacing: 0.5px;
+}
+
+.about .abt-sub span{
+    font-weight: 700;
+}
+
+.middle-line{
+    height: 4px;
+    width: 40%;
+    background-color: #ffaf00;
+    position: relative;
+    left: 30%;
+    margin-top: 30px;
+    top: 190px;
+}
+
+.provide{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    top: 200px;
+}
+
+.provide .provide-main{
+    font-size: 24px;
+    font-weight: 700;
+    color: #fff;
+    margin-top: 10px;
+    letter-spacing: 0.5px;
+}
+
+.car-types{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    padding: 10px;
+    margin-top: 10px;
+    gap: 60px;
+}
+
+.car-box{
+    background-color: rgba(113, 105, 50, 0.4);
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: 10px 10px 20px black;
+}
+
+.car-types .car-box>img{
+    height: 120px;
+    width: 100%;
+    border-radius: 20px;
+}
+
+.car-types .car-box>p{
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    margin-top: 10px;
+}
+
+.middle-line2{
+    height: 4px;
+    width: 40%;
+    background-color: #ffaf00;
+    position: relative;
+    left: 30%;
+    margin-top: 30px;
+    top: 200px;
+}
+
+.working{
+    width: 80%;
+    height:280px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 200px;
+    left: 10%;
+    border-radius: 30px;
+    margin-top: 20px;
+}
+
+.mainhead{
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: #fff;
+    margin-top: -30px;
+}
+
+.hiw{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.box{
+    background-color: rgba(113, 105, 50, 0.4);
+    width: 240px;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 12px;
+    margin-top: 20px;
+    border: 1px solid black;
+    box-shadow: 10px 10px 30px black;
+    
+}
+
+.box i{
+    color: yellow;
+    font-size: 24px;
+    height: 28px;
+    width: 28px;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    padding: 8px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 100%;
+}
+
+.box .hiw-main{
+    font-size: 24px;
+    font-weight: 700;
+    font-family: montserrat;
+    margin: 10px;
+    letter-spacing: 1px;
+    color: #fff;
+}
+
+.box .hiw-sub{
+    font-size: 18px;
+    font-weight: 500;
+    color: #fff;
+    margin: 0px 10px;
+    letter-spacing: 0.5px;
+    margin: 10px 0px 0px 10px;
+}
+
+.reviws-clm{
+    width: 90%;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    top: 210px;
+    padding: 10px;
+    left: 5%;
+    gap: 20px;
+
+}
+
+.reviws-clm .clm-box{
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(113, 105, 50, 0.4);
+    padding: 10px;
+    border-radius: 20px;
+    border: 1px solid black;
+    box-shadow: 10px 10px 30px black;
+}
+
+.clm-box>i{
+    color: yellow;
+    font-size: 24px;
+    height: 28px;
+    width: 28px;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    padding: 8px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 100%;
+}
+
+.clm-box>.clm-main{
+    font-size: 24px;
+    font-weight: 700;
+    font-family: montserrat;
+    margin: 10px;
+    letter-spacing: 1px;
+    color: #fff;
+}
+
+.clm-box>.clm-sub{
+    font-size: 18px;
+    font-weight: 500;
+    color: #fff;
+    margin: 0px 10px;
+    letter-spacing: 0.5px;
+    margin: 10px 0px 0px 10px;
+}
+
+.clm-box>.clm-sub span{
+    font-weight: 700;
+    color: yellow;
+}
+
+.clm-box>input{
+    border-radius: 20px;
+    height: 100%;
+    width: 100%;
+    border: 2px solid black;
+    background-color: #fff;
+    margin-top: 10px;
+}
+
+.clm-box>input::placeholder{
+    color: #1f1b0c;
+    position: absolute;
+    top: 8px;
+    left: 15px;
+    font-weight: 500;
+}
+
+.middle-line3{
+    height: 4px;
+    width: 40%;
+    background-color: #ffaf00;
+    position: relative;
+    left: 30%;
+    margin-top: 30px;
+    top: 180px;
+}
+
+.footer{
+    width: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    top: 200px;
+    margin-top: 30px;
+    height: 180px;
+    padding: 10px;
+}
+
+.footer .contact{
+    color: #fff;
+    margin-top: 10px;
+}
+
+.footer .contact .contact-main{
+    font-size: 20px;
+    font-weight: 600;
+    color: yellow;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.footer .contact .contact-main>i{
+    font-size: 24px;
+    background-color: #121212;
+    padding: 8px;
+    border-radius: 100%;
+    margin-right: 10px;
+}
+
+.footer .contact .contact-sub{
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 4px;
+    margin-left: 60px;
+}
+
+.footer .links>ul{
+    list-style: none;
+    margin-top: 10px;
+}
+
+.footer .links>ul li{
+    padding: 6px;
+    display: flex;
+    align-items: center;
+}
+
+.footer .links>ul>li a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.footer .links>ul>li a:hover{
+    color: yellow;
+    transition-duration: 0.7s;
+}
+
+.footer .links>ul>li i{
+    color: yellow;
+    font-size: 20px;
+    margin-right: 10px;
+}
